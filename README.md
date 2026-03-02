@@ -47,6 +47,9 @@ Built a comprehensive Power BI dashboard consolidating all critical customer KPI
 | **Data Freshness** | On-demand queries | Weekly auto-refresh | **Reliable cadence** |
 | **Analyst Time Saved** | ~45 min/week × 52 weeks | - | **~40 hours annually** |
 
+![Main KPI Dashboard](screenshots/Sales_KPI.png)
+*Executive KPI dashboard showing customer metrics with multi-period analysis and year-over-year variance tracking*
+
 ## 🎯 Multi-Period Analysis Framework
 
 ### Time Period Definitions
@@ -82,6 +85,32 @@ Retail customer behavior requires different analytical lenses:
 - **YTD** answers: "How does this calendar year compare to prior year?"
 
 Each period provides unique insights; together they create comprehensive visibility.
+
+## 📊 Dashboard Views
+
+The dashboard provides four synchronized time-period views, each with identical KPI structure but period-specific calculations:
+
+### Last 12 Months (L12M)
+![L12M Dashboard View](screenshots/L12M_KPI.png)
+*Rolling 12-month window capturing full seasonal cycle for trend analysis*
+
+### Fiscal Year-to-Date (FYTD)
+![FYTD Dashboard View](screenshots/FYTD_KPI.png)
+*February 1 start date aligned with retail fiscal calendar for goal tracking*
+
+### Season-to-Date (STD)
+![STD Dashboard View](screenshots/STD_KPI.png)
+*Current season comparison (February or August start) for seasonal planning*
+
+### Year-to-Date (YTD)
+![YTD Dashboard View](screenshots/YTD_KPI.png)
+*Calendar year view (January 1 start) for financial reporting alignment*
+
+Each view includes:
+- **Customer metrics:** Active, Known, New, Reactivated customers
+- **Engagement metrics:** Revenue per Active, Tickets per Active, Items per Ticket
+- **Channel breakdown:** Online/Offline/Omni classification
+- **Year-over-year variance:** CY vs PY comparison with % change
 
 ## 📊 Key Performance Indicators
 
@@ -187,6 +216,9 @@ The dashboard uses a **shared fact table** architecture with the RFM segmentatio
 - **CustomerActivityHistory** - Historical activity for cohort classification
 - **DimChannel** - Channel slicer table (disconnected)
 - **Time Calculation Slicer** - Period selection control
+
+![Power BI Data Model](screenshots/Model_KPI.png)
+*Star schema with FactSales at center, connecting to Customer, Product, Store, Date, and Channel dimensions*
 
 ### The Bookmark Navigator Challenge
 
@@ -447,24 +479,11 @@ This portfolio demonstrates the methodology, architecture, and problem-solving a
 ## 📞 Contact
 
 **Mehmet Cetin**  
-Business Intelligence Analyst | Data Analytics Professional
+Data Analyst | BI Developer  
 
-* LinkedIn: https://www.linkedin.com/in/mehmet-cetin-461674a4/
-* Email: mcetin11@gmail.com
-* GitHub: https://github.com/mcetin-data
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/mehmet-cetin-461674a4/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/mcetin-data)
 
 ---
 
 *This project demonstrates advanced Power BI development, SQL optimization, and user-centric design for executive analytics. Available for discussion in technical interviews.*
-
-## About
-
-Consolidated marketing KPI dashboard with multi-period analysis, automated refresh, and sophisticated bookmark navigation for retail customer metrics
-
-### License
-
-MIT License
-
-### Topics
-
-`power-bi` `data-analytics` `kpi-dashboard` `retail-analytics` `sql-server` `azure-sql` `microsoft-fabric` `business-intelligence` `executive-dashboard` `time-intelligence` `bookmark-navigation` `multi-period-analysis`
